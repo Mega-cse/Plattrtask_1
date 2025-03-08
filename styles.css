@@ -1,0 +1,228 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e05d51;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eaeaea;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    min-width: 300px;
+    padding: 20px;
+    margin: 0 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.testimonial p:last-child {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
